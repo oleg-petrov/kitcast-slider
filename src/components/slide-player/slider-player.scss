@@ -1,0 +1,32 @@
+.slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100VH;
+}
+
+.slider {
+    width: 700px;
+    height: 500px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity ease-in-out 0.4s;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &.active {
+        opacity: 1;
+    }
+}
